@@ -1,0 +1,48 @@
+// COLORS
+$white: #fff;
+
+$color-primary: #58e1c1;
+$color-secondary: #51DDFC;
+$color-success: #63cc82;
+$color-error: #e4757a;
+$color-warning: #fd7856;
+$color-info: #927bc1;
+
+$color-col-6: #3FABCA;
+$color-col-4: #7EE6FD;
+$color-col-3: #DEB2EE;
+$color-col-5: #88D9A0;
+$color-col-7: #EC9FA3;
+$color-col-8: #FD9F85;
+$color-col-12: #84E7D1;
+
+$color-text: #828282;
+$color-text-block: #4c4c4c;
+// FONTS
+$font-stack-primary: 'Roboto', sans-serif;
+
+// LAYOUT
+$max-width: 1000px;
+$gutter: 10px;
+
+
+// BREAKPOINTS
+$break-m: 769px;
+$break-l: 1080px;
+
+//FLEX PROPERTIES
+$flex: flex;
+$row: row;
+$col: column;
+$flex-wrap: wrap;
+$just-center: center;
+$just-space-around: space-around;
+$just-space-between: space-between;
+
+// @mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+//     display: $display;
+//     flex-direction: $dir;
+//     flex-wrap: $wrap;
+//     justify-content: $just;
+//     @content;
+// }

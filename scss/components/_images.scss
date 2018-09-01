@@ -1,0 +1,26 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+.img  {
+  &--logo {
+    @include center(150px);
+    @extend %img;
+  }
+
+  &--frame {
+    @include center(350px);
+    @extend %img;
+    padding: .75em;
+    border: 1px solid $color-text;
+    margin-top: .5em;
+    margin-bottom: 2em;
+  }
+
+  &--avatar {
+    @include center(175px);
+    @extend %img;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}

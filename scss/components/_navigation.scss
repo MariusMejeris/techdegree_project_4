@@ -1,0 +1,30 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+.nav {
+  @include center(100%);
+  margin-bottom: 5em;
+  text-align: center;
+  @include flex ($display: flex, $dir:column){
+  }
+  @media (min-width: $break-m) {
+    @include flex ($dir:row){
+    }
+  }
+  .nav__item {
+    @include center(100%);
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color-text;
+    width: 100%;
+    border-radius: 5px;
+    padding: .75em 1.5em;
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
+  }
+}

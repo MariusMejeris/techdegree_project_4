@@ -1,0 +1,49 @@
+// =========================================
+//  MIXINS
+// =========================================
+
+
+// Center containers
+@mixin center($w: 100%) {
+  width: $w;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// GRID - includes grid function, which defaults to max-width value of 100%
+@mixin grid($per-line, $color) {
+flex: 1 per-line($per-line);
+text-align: center;
+color: $color-text;
+border: none;
+border-radius: 5px;
+padding: $gutter;
+margin: 5px;
+background-color: $color;
+  @media (min-width: $break-m) {
+margin-bottom: 2em;
+  }
+}
+
+//Desktop Media Query
+@mixin desktop {
+  @media (min-width: #{$break-m}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$break-l}) {
+    @content;
+  }
+}
+
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}

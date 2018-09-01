@@ -1,0 +1,35 @@
+// ======================================
+// BUTTON STYLES
+// ======================================
+
+
+.btn--default {
+  @extend %btn;
+  background-color: $color-secondary;
+  flex: 1 per-line(5);
+  padding: $gutter;
+}
+.btn--success {
+  @extend %btn;
+  background-color:$color-success;
+  flex: 1 per-line(5);
+  padding: $gutter;
+}
+.btn--error {
+  @extend %btn;
+  background-color:$color-error;
+  flex: 1 per-line(5);
+  padding: $gutter;
+}
+.btn--warning {
+  @extend %btn;
+  background-color:$color-warning;
+  flex: 1 per-line(5);
+  padding: $gutter;
+}
+.btn--info {
+  @extend %btn;
+  background-color:$color-info;
+  flex: 1 per-line(5);
+  padding: $gutter;
+}
